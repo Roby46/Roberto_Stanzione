@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roberto Stanzione | Postdoctoral Researcher</title>
+  <meta name="description" content="Personal webpage of Name Surname, postdoctoral researcher." />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1f2933;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --light: #f3f4f6;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 3rem 1.5rem 2rem;
+      background: var(--light);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: 2.2rem;
+      font-weight: 700;
+    }
+
+    h2 {
+      margin-top: 3rem;
+      font-size: 1.4rem;
+      border-bottom: 2px solid var(--light);
+      padding-bottom: 0.3rem;
+    }
+
+    p {
+      margin: 0.5rem 0 1rem;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: var(--muted);
+    }
+
+    main {
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .links a {
+      margin-right: 1rem;
+      font-weight: 500;
+    }
+
+    footer {
+      padding: 2rem 1.5rem;
+      background: var(--light);
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Name Surname</h1>
+      <p class="subtitle">Postdoctoral Researcher · Inria, ENS</p>
+      <div class="links">
+        <a href="#">CV</a>
+        <a href="#">Google Scholar</a>
+        <a href="#">ORCID</a>
+        <a href="#">GitHub</a>
+        <a href="mailto:email@institution.edu">Email</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section>
+        <h2>About</h2>
+        <p>
+          I am a postdoctoral researcher at <strong>Institution</strong>. My research focuses on clearly defined topics
+          in your main areas of interest (e.g. computational neuroscience, applied mathematics, machine learning,
+          theoretical physics, etc.).
+        </p>
+      </section>
+
+      <section>
+        <h2>Research Interests</h2>
+        <ul>
+          <li>Primary research area</li>
+          <li>Secondary research area</li>
+          <li>Methods, theory, or applications</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Publications & Preprints</h2>
+        <p>
+          For an up-to-date list of publications and preprints, please see my
+          <a href="#">Google Scholar profile</a>.
+        </p>
+      </section>
+
+      <section>
+        <h2>Affiliation</h2>
+        <p>
+          Department, University or Research Center<br />
+          City, Country
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Name Surname
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
